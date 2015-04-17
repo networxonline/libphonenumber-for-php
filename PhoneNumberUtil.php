@@ -1884,7 +1884,9 @@ class PhoneNumberUtil {
 	// numberFormat parameter here is used to specify which format to use for those cases. If a
 	// carrierCode is specified, this will be inserted into the formatted string to replace $CC.
 	private function formatNsn($number, PhoneMetadata $metadata, $numberFormat, $carrierCode = NULL) {
-		$intlNumberFormats = $metadata->intlNumberFormats();
+	        if ($metadata == null)
+        	    return $number;
+            	$intlNumberFormats = $metadata->intlNumberFormats();
 		// When the intlNumberFormats exists, we use that to format national number for the
 		// INTERNATIONAL format instead of using the numberDesc.numberFormats.
 		$availableFormats =
