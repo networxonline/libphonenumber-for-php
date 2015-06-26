@@ -1,12 +1,12 @@
 <?php
 return array (
-  'generalDesc' => 
+  'generalDesc' =>
   array (
-    'NationalNumberPattern' => '[2-47-9]\\d{5}',
+    'NationalNumberPattern' => '[2-57-9]\\d{5}',
     'PossibleNumberPattern' => '\\d{6}',
     'ExampleNumber' => '',
   ),
-  'fixedLine' => 
+  'fixedLine' =>
   array (
     'NationalNumberPattern' => '
           (?:
@@ -19,10 +19,11 @@ return array (
     'PossibleNumberPattern' => '\\d{6}',
     'ExampleNumber' => '201234',
   ),
-  'mobile' => 
+  'mobile' =>
   array (
     'NationalNumberPattern' => '
           (?:
+            5[0-4]|
             [79]\\d|
             8[0-79]
           )\\d{4}
@@ -30,25 +31,25 @@ return array (
     'PossibleNumberPattern' => '\\d{6}',
     'ExampleNumber' => '751234',
   ),
-  'tollFree' => 
+  'tollFree' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'premiumRate' => 
+  'premiumRate' =>
   array (
     'NationalNumberPattern' => '36\\d{4}',
     'PossibleNumberPattern' => '\\d{6}',
     'ExampleNumber' => '366711',
   ),
-  'sharedCost' => 
+  'sharedCost' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'noInternationalDialling' => 
+  'noInternationalDialling' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
@@ -58,20 +59,24 @@ return array (
   'countryCode' => 687,
   'internationalPrefix' => '00',
   'sameMobileAndFixedLinePattern' => false,
-  'numberFormat' => 
+  'numberFormat' =>
   array (
-    0 => 
+    0 =>
     array (
       'pattern' => '(\\d{2})(\\d{2})(\\d{2})',
       'format' => '$1.$2.$3',
-      'leadingDigitsPatterns' => 
+      'leadingDigitsPatterns' =>
       array (
+        0 => '
+            [2-46-9]|
+            5[0-4]
+          ',
       ),
       'nationalPrefixFormattingRule' => '',
       'domesticCarrierCodeFormattingRule' => '',
     ),
   ),
-  'intlNumberFormat' => 
+  'intlNumberFormat' =>
   array (
   ),
   'mainCountryForCode' => NULL,

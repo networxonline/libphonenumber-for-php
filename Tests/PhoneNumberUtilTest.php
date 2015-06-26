@@ -143,7 +143,7 @@ class PhoneNumberUtilTest extends \PHPUnit_Framework_TestCase {
 	 * This method is called before a test is executed.
 	 */
 	protected function setUp() {
-		
+
 	}
 
 	/**
@@ -151,7 +151,7 @@ class PhoneNumberUtilTest extends \PHPUnit_Framework_TestCase {
 	 * This method is called after a test is executed.
 	 */
 	protected function tearDown() {
-		
+
 	}
 
 	public function testGetSupportedRegions() {
@@ -960,7 +960,7 @@ class PhoneNumberUtilTest extends \PHPUnit_Framework_TestCase {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	public function testIsValidNumberForRegion() {
 		// This number is valid for the Bahamas, but is not a valid US number.
@@ -1070,8 +1070,8 @@ class PhoneNumberUtilTest extends \PHPUnit_Framework_TestCase {
 
 		// Test national number bigger than max 32-bit signed integer
 		$inNumber = new PhoneNumber();
-		$inNumber->setCountryCode(55)->setNationalNumber(9876543210);
-		$this->assertEquals($inNumber, $this->phoneUtil->parse("9876543210", RegionCode::BR));
+		$inNumber->setCountryCode(65)->setNationalNumber(9876543210);
+		$this->assertEquals($inNumber, $this->phoneUtil->parse("9876543210", RegionCode::SG));
 	}
 
 	public function testIsAlphaNumber() {

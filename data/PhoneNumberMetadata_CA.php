@@ -1,6 +1,6 @@
 <?php
 return array (
-  'generalDesc' => 
+  'generalDesc' =>
   array (
     'NationalNumberPattern' => '
           [2-9]\\d{9}|
@@ -9,7 +9,7 @@ return array (
     'PossibleNumberPattern' => '\\d{7}(?:\\d{3})?',
     'ExampleNumber' => '',
   ),
-  'fixedLine' => 
+  'fixedLine' =>
   array (
     'NationalNumberPattern' => '
           (?:
@@ -28,10 +28,10 @@ return array (
               03|
               1[68]|
               3[178]|
-              5[06]
+              50
             )|
             5(?:
-              0[06]|
+              06|
               1[49]|
               79|
               8[17]
@@ -43,9 +43,9 @@ return array (
               47
             )|
             7(?:
-              0[059]|
-              80|
-              78
+              0[59]|
+              78|
+              80
             )|
             8(?:
               [06]7|
@@ -59,7 +59,7 @@ return array (
     'PossibleNumberPattern' => '\\d{7}(?:\\d{3})?',
     'ExampleNumber' => '2042345678',
   ),
-  'mobile' => 
+  'mobile' =>
   array (
     'NationalNumberPattern' => '
           (?:
@@ -78,10 +78,10 @@ return array (
               03|
               1[68]|
               3[178]|
-              5[06]
+              50
             )|
             5(?:
-              0[06]|
+              06|
               1[49]|
               79|
               8[17]
@@ -93,9 +93,9 @@ return array (
               47
             )|
             7(?:
-              0[059]|
-              80|
-              78
+              0[59]|
+              78|
+              80
             )|
             8(?:
               [06]7|
@@ -108,12 +108,11 @@ return array (
     'PossibleNumberPattern' => '\\d{7}(?:\\d{3})?',
     'ExampleNumber' => '2042345678',
   ),
-  'tollFree' => 
+  'tollFree' =>
   array (
     'NationalNumberPattern' => '
           8(?:
             00|
-            55|
             66|
             77|
             88
@@ -123,19 +122,19 @@ return array (
     'PossibleNumberPattern' => '\\d{7}(?:\\d{3})?',
     'ExampleNumber' => '8002123456',
   ),
-  'premiumRate' => 
+  'premiumRate' =>
   array (
     'NationalNumberPattern' => '900[2-9]\\d{6}',
     'PossibleNumberPattern' => '\\d{10}',
     'ExampleNumber' => '9002123456',
   ),
-  'sharedCost' => 
+  'sharedCost' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'noInternationalDialling' => 
+  'noInternationalDialling' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
@@ -147,10 +146,10 @@ return array (
   'nationalPrefix' => '1',
   'nationalPrefixForParsing' => '1',
   'sameMobileAndFixedLinePattern' => false,
-  'numberFormat' => 
+  'numberFormat' =>
   array (
   ),
-  'intlNumberFormat' => 
+  'intlNumberFormat' =>
   array (
   ),
   'mainCountryForCode' => NULL,

@@ -1,6 +1,6 @@
 <?php
 return array (
-  'generalDesc' => 
+  'generalDesc' =>
   array (
     'NationalNumberPattern' => '
           [36-9]\\d{6}|
@@ -9,7 +9,7 @@ return array (
     'PossibleNumberPattern' => '\\d{7}(?:\\d{4})?',
     'ExampleNumber' => '',
   ),
-  'fixedLine' => 
+  'fixedLine' =>
   array (
     'NationalNumberPattern' => '
           (?:
@@ -21,37 +21,37 @@ return array (
     'PossibleNumberPattern' => '\\d{7}',
     'ExampleNumber' => '3212345',
   ),
-  'mobile' => 
+  'mobile' =>
   array (
     'NationalNumberPattern' => '
           (?:
             7[0-467]|
-            8[367]|
-            9[02346-9]
+            8[3467]|
+            9\\d
           )\\d{5}
         ',
     'PossibleNumberPattern' => '\\d{7}',
     'ExampleNumber' => '7012345',
   ),
-  'tollFree' => 
+  'tollFree' =>
   array (
     'NationalNumberPattern' => '0800\\d{7}',
     'PossibleNumberPattern' => '\\d{11}',
     'ExampleNumber' => '08001234567',
   ),
-  'premiumRate' => 
+  'premiumRate' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'sharedCost' => 
+  'sharedCost' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'noInternationalDialling' => 
+  'noInternationalDialling' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
@@ -62,24 +62,24 @@ return array (
   'internationalPrefix' => '0(?:0|52)',
   'preferredInternationalPrefix' => '00',
   'sameMobileAndFixedLinePattern' => false,
-  'numberFormat' => 
+  'numberFormat' =>
   array (
-    0 => 
+    0 =>
     array (
       'pattern' => '(\\d{3})(\\d{4})',
       'format' => '$1 $2',
-      'leadingDigitsPatterns' => 
+      'leadingDigitsPatterns' =>
       array (
         0 => '[36-9]',
       ),
       'nationalPrefixFormattingRule' => '',
       'domesticCarrierCodeFormattingRule' => '',
     ),
-    1 => 
+    1 =>
     array (
       'pattern' => '(\\d{4})(\\d{3})(\\d{4})',
       'format' => '$1 $2 $3',
-      'leadingDigitsPatterns' => 
+      'leadingDigitsPatterns' =>
       array (
         0 => '0',
       ),
@@ -87,7 +87,7 @@ return array (
       'domesticCarrierCodeFormattingRule' => '',
     ),
   ),
-  'intlNumberFormat' => 
+  'intlNumberFormat' =>
   array (
   ),
   'mainCountryForCode' => NULL,

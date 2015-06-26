@@ -1,12 +1,12 @@
 <?php
 return array (
-  'generalDesc' => 
+  'generalDesc' =>
   array (
-    'NationalNumberPattern' => '[029]\\d{7}',
+    'NationalNumberPattern' => '[0289]\\d{7}',
     'PossibleNumberPattern' => '\\d{8}',
     'ExampleNumber' => '',
   ),
-  'fixedLine' => 
+  'fixedLine' =>
   array (
     'NationalNumberPattern' => '
           2(?:
@@ -30,31 +30,36 @@ return array (
     'PossibleNumberPattern' => '\\d{8}',
     'ExampleNumber' => '20201234',
   ),
-  'mobile' => 
+  'mobile' =>
   array (
-    'NationalNumberPattern' => '9[0-46-9]\\d{6}',
+    'NationalNumberPattern' => '
+          (?:
+            89|
+            9[0-46-9]
+          )\\d{6}
+        ',
     'PossibleNumberPattern' => '\\d{8}',
     'ExampleNumber' => '93123456',
   ),
-  'tollFree' => 
+  'tollFree' =>
   array (
     'NationalNumberPattern' => '08\\d{6}',
     'PossibleNumberPattern' => '\\d{8}',
     'ExampleNumber' => '08123456',
   ),
-  'premiumRate' => 
+  'premiumRate' =>
   array (
     'NationalNumberPattern' => '09\\d{6}',
     'PossibleNumberPattern' => '\\d{8}',
     'ExampleNumber' => '09123456',
   ),
-  'sharedCost' => 
+  'sharedCost' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'noInternationalDialling' => 
+  'noInternationalDialling' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
@@ -64,27 +69,27 @@ return array (
   'countryCode' => 227,
   'internationalPrefix' => '00',
   'sameMobileAndFixedLinePattern' => false,
-  'numberFormat' => 
+  'numberFormat' =>
   array (
-    0 => 
+    0 =>
     array (
-      'pattern' => '([029]\\d)(\\d{2})(\\d{2})(\\d{2})',
+      'pattern' => '(\\d{2})(\\d{2})(\\d{2})(\\d{2})',
       'format' => '$1 $2 $3 $4',
-      'leadingDigitsPatterns' => 
+      'leadingDigitsPatterns' =>
       array (
         0 => '
-            [29]|
+            [289]|
             09
           ',
       ),
       'nationalPrefixFormattingRule' => '',
       'domesticCarrierCodeFormattingRule' => '',
     ),
-    1 => 
+    1 =>
     array (
       'pattern' => '(08)(\\d{3})(\\d{3})',
       'format' => '$1 $2 $3',
-      'leadingDigitsPatterns' => 
+      'leadingDigitsPatterns' =>
       array (
         0 => '08',
       ),
@@ -92,7 +97,7 @@ return array (
       'domesticCarrierCodeFormattingRule' => '',
     ),
   ),
-  'intlNumberFormat' => 
+  'intlNumberFormat' =>
   array (
   ),
   'mainCountryForCode' => NULL,

@@ -1,42 +1,42 @@
 <?php
 return array (
-  'generalDesc' => 
+  'generalDesc' =>
   array (
-    'NationalNumberPattern' => '[01]\\d{6,7}',
-    'PossibleNumberPattern' => '\\d{7,8}',
+    'NationalNumberPattern' => '0\\d{7}',
+    'PossibleNumberPattern' => '\\d{8}',
     'ExampleNumber' => '',
   ),
-  'fixedLine' => 
+  'fixedLine' =>
   array (
-    'NationalNumberPattern' => '1\\d{6}',
-    'PossibleNumberPattern' => '\\d{7,8}',
-    'ExampleNumber' => '1441234',
+    'NationalNumberPattern' => '01\\d{6}',
+    'PossibleNumberPattern' => '\\d{8}',
+    'ExampleNumber' => '01441234',
   ),
-  'mobile' => 
+  'mobile' =>
   array (
     'NationalNumberPattern' => '0[2-7]\\d{6}',
-    'PossibleNumberPattern' => '\\d{7,8}',
+    'PossibleNumberPattern' => '\\d{8}',
     'ExampleNumber' => '06031234',
   ),
-  'tollFree' => 
+  'tollFree' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'premiumRate' => 
+  'premiumRate' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'sharedCost' => 
+  'sharedCost' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'noInternationalDialling' => 
+  'noInternationalDialling' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
@@ -45,35 +45,21 @@ return array (
   'id' => 'GA',
   'countryCode' => 241,
   'internationalPrefix' => '00',
-  'nationalPrefix' => '0',
-  'nationalPrefixForParsing' => '0',
   'sameMobileAndFixedLinePattern' => false,
-  'numberFormat' => 
+  'numberFormat' =>
   array (
-    0 => 
-    array (
-      'pattern' => '(1)(\\d{2})(\\d{2})(\\d{2})',
-      'format' => '$1 $2 $3 $4',
-      'leadingDigitsPatterns' => 
-      array (
-        0 => '1',
-      ),
-      'nationalPrefixFormattingRule' => '0$1',
-      'domesticCarrierCodeFormattingRule' => '',
-    ),
-    1 => 
+    0 =>
     array (
       'pattern' => '(0\\d)(\\d{2})(\\d{2})(\\d{2})',
       'format' => '$1 $2 $3 $4',
-      'leadingDigitsPatterns' => 
+      'leadingDigitsPatterns' =>
       array (
-        0 => '0',
       ),
       'nationalPrefixFormattingRule' => '',
       'domesticCarrierCodeFormattingRule' => '',
     ),
   ),
-  'intlNumberFormat' => 
+  'intlNumberFormat' =>
   array (
   ),
   'mainCountryForCode' => NULL,

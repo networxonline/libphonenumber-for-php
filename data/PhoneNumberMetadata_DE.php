@@ -25,8 +25,9 @@ return array (
     'NationalNumberPattern' => '
           [246]\\d{5,13}|
           3(?:
-            [03-9]\\d{4,13}|
-            2\\d{9}
+            0\\d{3,13}|
+            2\\d{9}|
+            [3-9]\\d{4,13}
           )|
           5(?:
             0[2-8]|
@@ -44,9 +45,10 @@ return array (
             [1-9]\\d
           )\\d{3,10}|
           9(?:
-            0[6-9]|
-            [1-9]\\d
-          )\\d{3,10}
+            0[6-9]\\d{3,10}|
+            1\\d{4,12}|
+            [2-9]\\d{4,11}
+          )
         ',
     'PossibleNumberPattern' => '\\d{2,15}',
     'ExampleNumber' => '30123456',
@@ -68,8 +70,8 @@ return array (
   ),
   'tollFree' =>
   array (
-    'NationalNumberPattern' => '800\\d{7,10}',
-    'PossibleNumberPattern' => '\\d{10,13}',
+    'NationalNumberPattern' => '800\\d{7,12}',
+    'PossibleNumberPattern' => '\\d{10,15}',
     'ExampleNumber' => '8001234567890',
   ),
   'premiumRate' =>
@@ -127,7 +129,7 @@ return array (
     ),
     2 =>
     array (
-      'pattern' => '(\\d{2})(\\d{4,11})',
+      'pattern' => '(\\d{2})(\\d{3,11})',
       'format' => '$1 $2',
       'leadingDigitsPatterns' =>
       array (
@@ -275,7 +277,7 @@ return array (
     ),
     6 =>
     array (
-      'pattern' => '(800)(\\d{7,10})',
+      'pattern' => '(800)(\\d{7,12})',
       'format' => '$1 $2',
       'leadingDigitsPatterns' =>
       array (

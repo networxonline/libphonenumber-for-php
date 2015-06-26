@@ -1,12 +1,12 @@
 <?php
 return array (
-  'generalDesc' => 
+  'generalDesc' =>
   array (
     'NationalNumberPattern' => '[237-9]\\d{7}',
     'PossibleNumberPattern' => '\\d{8}',
     'ExampleNumber' => '',
   ),
-  'fixedLine' => 
+  'fixedLine' =>
   array (
     'NationalNumberPattern' => '
           2(?:
@@ -16,11 +16,12 @@ return array (
               [23]\\d|
               4[056]|
               5[57]|
+              7[01389]|
               8[0146-9]|
               9[012]
             )|
             4(?:
-              2|3-59]|
+              2[3-59]|
               3[13-689]|
               4[0-68]|
               5[1-35]
@@ -52,31 +53,31 @@ return array (
     'PossibleNumberPattern' => '\\d{8}',
     'ExampleNumber' => '22123456',
   ),
-  'mobile' => 
+  'mobile' =>
   array (
     'NationalNumberPattern' => '[37-9]\\d{7}',
     'PossibleNumberPattern' => '\\d{8}',
     'ExampleNumber' => '91234567',
   ),
-  'tollFree' => 
+  'tollFree' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'premiumRate' => 
+  'premiumRate' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'sharedCost' => 
+  'sharedCost' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
     'ExampleNumber' => '',
   ),
-  'noInternationalDialling' => 
+  'noInternationalDialling' =>
   array (
     'NationalNumberPattern' => 'NA',
     'PossibleNumberPattern' => 'NA',
@@ -86,20 +87,20 @@ return array (
   'countryCode' => 504,
   'internationalPrefix' => '00',
   'sameMobileAndFixedLinePattern' => false,
-  'numberFormat' => 
+  'numberFormat' =>
   array (
-    0 => 
+    0 =>
     array (
       'pattern' => '(\\d{4})(\\d{4})',
       'format' => '$1-$2',
-      'leadingDigitsPatterns' => 
+      'leadingDigitsPatterns' =>
       array (
       ),
       'nationalPrefixFormattingRule' => '',
       'domesticCarrierCodeFormattingRule' => '',
     ),
   ),
-  'intlNumberFormat' => 
+  'intlNumberFormat' =>
   array (
   ),
   'mainCountryForCode' => NULL,
