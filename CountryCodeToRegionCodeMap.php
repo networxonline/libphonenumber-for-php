@@ -20,7 +20,7 @@ class CountryCodeToRegionCodeMap {
 		40 => array('RO'),
 		41 => array('CH'),
 		43 => array('AT'),
-		44 => array('GB', 'GG', 'IM', 'JE'),
+		44 => array('GB', 'GG', 'IM', 'JE','UK'),
 		45 => array('DK'),
 		46 => array('SE'),
 		47 => array('NO', 'SJ'),

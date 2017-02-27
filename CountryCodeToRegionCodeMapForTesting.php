@@ -7,7 +7,7 @@ class CountryCodeToRegionCodeMapForTesting {
 	public static $countryCodeToRegionCodeMap = array(
 		1 => array('US', 'BS'),
 		39 => array('IT'),
-		44 => array('GB'),
+		44 => array('GB','UK'),
 		48 => array('PL'),
 		49 => array('DE'),
 		52 => array('MX'),
